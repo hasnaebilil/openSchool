@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- <div class="slides-intro">
+
+    <h1> Backend development using Python </h1>
+
+    <p>Let's learn about the backend development using Python.
+        This time, we will start talking about the basics of Python language. Let's learn about the backend development
+        using Python.
+        This time, we will start talking about the basics of Python language.
+    </p>
+
+</div> -->
+
+
+<div class="h_iframe">
+    <iframe id="inlineFrameExample" title="Inline Frame Example" src={% static "/slides/python_slides_1.html" %}
+        frameborder="0" allowfullscree>
+    </iframe>
+</div>
+
+<!-- <div class="slides-intro">
+
+    <h1> Backend development using Python </h1>
+
+    <p>Let's learn about the backend development using Python.
+        This time, we will start talking about the basics of Python language. Let's learn about the backend development
+        using Python.
+        This time, we will start talking about the basics of Python language.
+    </p>
+
+</div> -->
+
+
+<div class="h_iframe">
+    <iframe class="slide-frame" id="inlineFrameExample" title="Inline Frame Example" src={%
+        static "/slides/python_slides_2.html" %} frameborder="0" allowfullscree>
+    </iframe>
+</div>
+
+<div class="h_iframe">
+    <iframe id="inlineFrameExample" title="Inline Frame Example" src={% static "/slides/python_slides_2.html" %}
+        frameborder="0" allowfullscree>
+    </iframe>
+</div>
+
+<div class="h_iframe">
+    <iframe id="inlineFrameExample" title="Inline Frame Example" src={% static "/slides/python_slides_2.html" %}
+        frameborder="0" allowfullscree>
+    </iframe>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Courses</h1>
+
+<div class="course-container">
+    {% for course in courses %}
+    <div class="course-video">
+        <div class="course-thumbnail-container">
+            <img src="{{ course.video_url }}" class="course-thumbnail-img" alt="{{ course.name }}">
+        </div>
+
+        <div class="course-information">
+            <div class="course-name">
+                {{ course.name }}
+            </div>
+            <div class="course-description">
+                {{ course.description }}
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

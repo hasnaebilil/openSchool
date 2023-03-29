@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learnit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href={% static "/css/base.css" %}>
+  <link rel="stylesheet" href={% static "/css/index.css" %}>
+  <link rel="stylesheet" href={% static "/css/python.css" %}>
+</head>
+
+<body>
+  <nav class="header">
+    <div class="logos">
+      <div class="learnit-logo-place">
+        <a href="{% url 'home' %}">
+          <img class="learnit-logo" src={% static "/images/learnit-logo.jpg" %} alt="learnit">
+        </a>
+      </div>
+      <!-- <div class="openSchool-logo">
+        <img class="learnit-logo" src={% static "/images/openSchool-logo12.jpg" %} alt="openSchool">
+      </div> -->
+    </div>
+    <form class="search-bar-flex" method="POST" action="{% url 'search-courses' %}">
+      {% csrf_token %}
+      <input class="search-bar" type="search" placeholder="Search Courses" aria-label="Search" name="searched">
+      <button class="search-button" type="submit">
+        Search
+      </button>
+    </form>
+    <ul class="nav-links">
+      <!-- <li><a href="{% url 'courses' %}">About</a></li> -->
+      <li><a href="{% url 'courses' %}">Courses</a></li>
+      <li><a href="{% url 'algorithmic' %}">Algorithmic</a></li>
+      <li><a href="{% url 'courses' %}">Data Structure</a></li>
+      <li><a href="#">Linux</a></li>
+      <li><a href="#">Html, CSS, JS</a></li>
+      <li><a href="{% url 'python' %}">Python</a></li>
+      <li><a href="#">Django</a></li>
+      <!-- <li><a href="#">Microservices with Node-js and React</a></li> -->
+      <li><a href="#">AWS</a></li>
+      <li><a href="#">Data Bases</a></li>
+      <li><a href="#">REST Api's</a></li>
+      <li><a href="#">Containers</a></li>
+    </ul>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.slides-intro p {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.slides-intro h1 {
+    font-size: 30px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.h_iframe {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+.slide-frame {
+    display: inline-block;
+    background-color: green;
+}

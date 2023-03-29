@@ -1,0 +1,105 @@
+body {
+    background: black;
+    color: white;
+    /* padding-bottom: 1000px; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    background: url(background-image.jpg);
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: center;
+    min-height: 30vh;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 30px;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(196, 189, 189);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.learnit-logo-place {
+    width: 50px;
+}
+
+.openSchool-logo {
+    width: 140px;
+}
+
+.learnit-logo {
+    width: 100%;
+}
+
+.search-bar-flex {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.search-bar {
+    background-color: rgb(196, 189, 189);
+    height: 100%;
+}
+
+.search-button {
+    background-color: rgb(170, 78, 13);
+    color: rgb(196, 189, 189);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.h_iframe iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.h_iframe {
+    height: 100%;
+    width: 100%;
+}

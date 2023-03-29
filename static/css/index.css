@@ -1,0 +1,13 @@
+.course-container {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+.course-thumbnail-img {
+    width: 100%;
+    object-fit: scale-down;
+    object-position: bottom, center;
+}

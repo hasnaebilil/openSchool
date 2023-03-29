@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block search %}
+<form class="search-bar-flex" method="POST" action="{% url 'search-courses' %}">
+    {% csrf_token %}
+
+    <input class="search-bar" type="search" placeholder="Search Courses" aria-label="Search" name="searched">
+    <button class="search-button" type="submit">
+        Search
+    </button>
+</form>
+{% endblock %}
+
+
+{% block content %}
+
+<center>
+    {% if searched %}
+    <h1>
+        You Searched For {{ searched }}
+        <br>
+    </h1>
+
+    {% for course in courses %}
+    {{course.name}} <br>
+    {% endfor %}
+
+    {% else %}
+    <h1>
+        You Forgot to Search For A Course
+    </h1>
+    {% endif %}
+</center>
+
+{% endblock %}
